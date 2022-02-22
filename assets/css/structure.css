@@ -5230,6 +5230,10 @@ html, body {
 	#Top_bar .top_bar_left {
 		width: 729px;
 	}
+	/* Top bar sticky */
+	#Top_bar.is-sticky{
+		position: fixed;
+	}
 	/* Google maps */
 	.column_map .google-map-contact-wrapper {
 		width: 921px;
@@ -5374,6 +5378,10 @@ body {
 	/* Top bar width */
 	#Top_bar .top_bar_left {
 		width: 501px;
+	}
+	/* Top bar sticky */
+	#Top_bar.is-sticky{
+		position: fixed;
 	}
 	/* .footer-sliding */
 	.footer-fixed #Content, .footer-sliding #Content {
@@ -5674,6 +5682,9 @@ body {
 		width: 100% !important;
 		margin-top: 10px;
 		background: none !important;
+	}
+	#Top_bar.is-sticky{
+		position: fixed;
 	}
 	.header-simple #Top_bar .top_bar_left {
 		top: 0 !important;
