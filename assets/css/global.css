@@ -2283,10 +2283,12 @@ blockquote:after {
 .image_frame .image_wrapper, .wp-caption img {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box
+	box-sizing: border-box;
+	
 }
 .image_frame a, .wp-caption a {
-	display: block
+	display: block;
+	 
 }
 .wp-caption-text {
 	display: block;
@@ -2391,11 +2393,11 @@ blockquote:after {
 	width: 100%;
 	text-align: center
 }
-.image_frame .image_wrapper .image_links.double a {
+/* .image_frame .image_wrapper .image_links.double a {
 	width: 50%;
 	display: block;
 	float: left
-}
+} */
 .image_frame .image_wrapper .image_links.double a:first-child {
 	-webkit-box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, .2);
 	box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, .2)
@@ -4388,6 +4390,7 @@ body.table-hover:not(.woocommerce-page) table tr:hover td {
 	transition: all .2s ease-in-out
 }
 @media only screen and (min-width: 768px) {
+	
 	.offer_thumb .slider_pagination {
 		position: absolute;
 		left: 0;
@@ -6805,7 +6808,8 @@ ul.clients li .client_wrapper, ul.clients li .client_wrapper img {
 }
 .portfolio_slider ul li .image_frame {
 	border: 0;
-	margin-bottom: 0
+	margin-bottom: 0;
+	padding:4px 4px;
 }
 .portfolio_slider .slider_nav {
 	color: #fff;

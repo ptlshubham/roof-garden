@@ -1,56 +1,90 @@
-#slider {
-	position: relative;
-	width: 100%;
-	height: 100%;
-  
-	overflow: hidden;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  }
-  #slider ul {
-	position: relative;
-	list-style: none;
-	height: 100%;
-	width: 10000%;
-	padding: 0;
-	margin: 0;
-	transition: all 750ms ease;
-	left: 0;
-  }
-  #slider ul li {
-	position: relative;
-	height: 100%;
-  
-	float: left;
-  }
 
-  #slider ul li img{
-	width: 100%;
-	height: 100%;
-  }
+.slider {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
 
-  #slider #prev, #slider #next {
-	width: 50px;
-	line-height: 50px;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	position: absolute;
-	top: 50%;
-	border-radius: 50%;
-	font-size: 2rem;
-	text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-	transform: translateY(-50%);
-	transition: all 150ms ease;
-  }
+.current {
+  opacity: 1;
+}
 
-  #slider #prev {
-	left: 10px;
+/* ================================================= 
+                    buttons
+==================================================*/
+
+.buttons {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+}
+.next-btn,
+.prev-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  color: #f1f1f1;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.next-btn {
+  position: absolute;
+  right: 15px;
+}
+.prev-btn {
+  position: absolute;
+  left: 15px;
+}
+.next-btn:hover,
+.prev-btn:hover {
+  background: #f1f1f1;
+  color: black;
+}
+/*================================================ 
+               background images
+==================================================*/
+
+.slide:first-child {
+  background: url("../images/rg/img1.jpeg") no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+  background: url("../images/rg/img2.jpeg") no-repeat center center/cover;
+}
+.slide:nth-child(3) {
+  background: url("../images/rg/img1.jpeg") no-repeat center center/cover;
+}
+.slide:nth-child(4) {
+  background: url("../images/rg/img3.jpeg") no-repeat center center/cover;
+}
+
+
+/* ================================================= 
+                    responsive 
+==================================================*/
+@media screen and (max-width: 768px) {
+  .slide .content {
+    width: 100%;
+    bottom: -15%;
+    left: 0;
   }
-  #slider #next {
-	right: 10px;
+  .slide.current .content {
+    opacity: 1;
+    transform: translateY(0%);
+    left: 0;
+    bottom: 0%;
   }
-  
-  #slider #prev:hover, #slider #next:hover {
-	background-color: rgba(0, 0, 0, 0.5);
-	text-shadow: 0;
-  }
+}
