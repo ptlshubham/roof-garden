@@ -1212,7 +1212,7 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
 
 #Top_bar .logo {
 	float: left;
-	margin: 0 30px 0 20px;
+	margin: -26px 30px 0 20px;
 }
 #Top_bar .logo h1 {
 	margin: 0;
@@ -1236,7 +1236,7 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
 }
 #Top_bar #logo img {
 	vertical-align: middle;
-	max-height: 100%;
+	max-height: 250% !important;
 }
 #Top_bar #logo img.logo-sticky {
 	display: none;
@@ -3589,7 +3589,7 @@ body:not(.with_aside) .portfolio_group.list .portfolio-item .portfolio-item-fw-w
 	margin-bottom: 0;
 }
 #Footer .widgets_wrapper .widget {
-	padding: 15px 0;
+	padding: 15px 15px;
 	margin-bottom: 0;
 }
 #Footer .widgets_wrapper .widget:after {
@@ -3600,7 +3600,7 @@ body:not(.with_aside) .portfolio_group.list .portfolio-item .portfolio-item-fw-w
 }
 #Footer .footer_copy .one {
 	margin-bottom: 20px;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 #Footer .footer_copy .copyright {
 	float: left;
@@ -4513,7 +4513,7 @@ html, body {
 		padding: 0;
 	}
 	#Top_bar.is-sticky #logo {
-		padding: 5px 0;
+		/* padding: 5px 0; */
 		height: 50px;
 		line-height: 50px;
 	}
@@ -4993,7 +4993,7 @@ html, body {
 	}
 	#Top_bar a.responsive-menu-toggle i {
 		font-size: 25px;
-		line-height: 35px;
+		line-height: 19px;
 	}
 	#Top_bar a.responsive-menu-toggle span {
 		float: right;
@@ -6163,7 +6163,9 @@ html, body {
 		display: none
 	}
 	.mobile-sticky #Top_bar.is-sticky #logo img.logo-mobile-sticky {
-		display: inline-block
+		display: inline-block;
+		max-height: 120px !important;
+		margin-top: -16px !important;
 	}
 	.logo-overflow #Top_bar .logo {
 		height: auto!important
@@ -6547,7 +6549,7 @@ html, body {
 	.mobile-sticky #Top_bar.is-sticky #logo {
 		margin-top: 0;
 		margin-bottom: 0;
-		height: 60px!important;
+		height: 90px!important;
 		line-height: 60px!important;
 	}
 	.mobile-sticky #Top_bar.is-sticky a.responsive-menu-toggle {

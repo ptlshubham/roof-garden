@@ -829,7 +829,7 @@ a.action_button {
 		width: 100%;
 		left: 0;
 		top: -60px;
-		height: 60px;
+		height: 90px;
 		z-index: 701;
 		background: #fff;
 		opacity: .97;
@@ -862,9 +862,9 @@ a.action_button {
 		padding: 0
 	}
 	#Top_bar.is-sticky #logo, #Top_bar.is-sticky .custom-logo-link {
-		padding: 5px 0 !important;
+		/* padding: 5px 0 !important; */
 		height: 50px !important;
-		line-height: 50px !important
+		line-height: 57px !important
 	}
 	.logo-no-sticky-padding #Top_bar.is-sticky #logo {
 		height: 60px !important;
@@ -875,7 +875,7 @@ a.action_button {
 	}
 	#Top_bar.is-sticky #logo img.logo-sticky {
 		display: inline;
-		max-height: 35px;
+		max-height: 100px !important;
 	}
 	#Top_bar.is-sticky .menu_wrapper {
 		clear: none
@@ -1147,6 +1147,14 @@ a.action_button {
 	#Header_creative.scroll {
 		overflow: visible !important
 	}
+	.main{
+		font-size: 70px !important;
+	}
+	.submain{
+		font-size: 15px !important;
+		width: 390px !important;
+		text-align: justify !important;
+	}
 }
 #Header_wrapper, #Intro {
 	background-color: #17171d;
@@ -1329,7 +1337,7 @@ a.action_button {
 	background-color: #f9f0da !important;
 }
 #Top_bar .menu>li>a, #Top_bar #menu ul li.submenu .menu-toggle {
-	color: #fcf3dc;
+	color: #F1CAAD;
 }
 #Top_bar .menu>li.current-menu-item>a, #Top_bar .menu>li.current_page_item>a, #Top_bar .menu>li.current-menu-parent>a, #Top_bar .menu>li.current-page-parent>a, #Top_bar .menu>li.current-menu-ancestor>a, #Top_bar .menu>li.current-page-ancestor>a, #Top_bar .menu>li.current_page_ancestor>a, #Top_bar .menu>li.hover>a {
 	color: #de4623;
@@ -1660,7 +1668,7 @@ html {
 	background-color: #17171d;
 }
 body, button, span.date_label, .timeline_items li h3 span, input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], input[type="password"], input[type="tel"], input[type="email"], textarea, select, .offer_li .title h3 {
-	font-family: "Raleway", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #menu>ul>li>a, a.action_button, #overlay-menu ul li a {
 	font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -1713,8 +1721,8 @@ h1, .text-logo #logo {
 	letter-spacing: 0px;
 }
 h2 {
-	font-size: 60px;
-	line-height: 66px;
+	font-size: 40px;
+	line-height: 45px;
 	font-weight: 700;
 	letter-spacing: 0px;
 }
@@ -1747,6 +1755,10 @@ h6 {
 	line-height: 70px;
 	font-weight: 400;
 	letter-spacing: 0px;
+}
+.rs-layer-wrap{
+	left: 311px !important;
+
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	body {
@@ -1864,6 +1876,15 @@ h6 {
 	.widget>h3 {
 		font-size: 17px;
 		line-height: 20px;
+	}
+	.main{
+		font-size: 50px !important;
+		line-height: 50px !important;
+	}
+	.submain{
+		font-size: 15px !important;
+		width: 300px !important;
+		text-align: justify !important;
 	}
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -2134,7 +2155,7 @@ h6 {
 #Top_bar #logo, .header-fixed #Top_bar #logo, .header-plain #Top_bar #logo, .header-transparent #Top_bar #logo {
 	height: 60px;
 	line-height: 60px;
-	padding: 30px 0;
+	/* padding: 30px 0; */
 }
 .logo-overflow #Top_bar:not(.is-sticky) .logo {
 	height: 120px;
@@ -2171,10 +2192,11 @@ h6 {
 		top: 40px;
 	}
 	.mobile-header-mini #Top_bar #logo {
-		height: 50px !important;
+		height: 70px !important;
 		line-height: 50px !important;
 		margin: 5px 0;
 	}
+
 }
 input[type="date"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], select, textarea, .woocommerce .quantity input.qty {
 	border-width: 0;
@@ -2198,7 +2220,7 @@ form input.display-none {
 	padding: 220px 0 100px
 }
 #Footer .widgets_wrapper {
-	padding: 70px 0 40px
+	padding: 50px 0 10px
 }
 #sc_gallery-1 {
 	margin: auto;
@@ -2277,7 +2299,7 @@ form input.display-none {
 		width: 100%!important;
 	}
 	.section_wrapper, .container, .four.columns .widget-area {
-		width: calc(100% - 67px)!important;
+		width: calc(120% - 67px)!important;
 	}
 	.section_wrapper .mcb-wrap, .section_wrapper .column, .container .column, .sections_group, .four.columns {
 		margin: 0;
@@ -2295,6 +2317,18 @@ form input.display-none {
 	}
 	#Top_bar .top_bar_left {
 		margin-top: 0px;
+	}
+	.main{
+		font-size: 50px !important;
+		line-height: 60px !important;
+		margin-top: -110px !important;
+		margin-left: 7px !important;
+	}
+	.submain {
+		font-size: 15px !important;
+		width: 300px !important;
+		text-align: justify !important;
+		padding-left: 7px !important;
 	}
 }
 /* ------------------------------------------- *
@@ -2501,7 +2535,9 @@ p.flv_align_right, div.flv_align_right {
 		display: none
 	}
 	#Top_bar #logo img.logo-mobile {
-		display: inline-block
+		display: inline-block;
+		margin-top: -29px;
+		max-height: 120px !important;
 	}
 	.logo-overflow #Top_bar .logo {
 		height: auto!important

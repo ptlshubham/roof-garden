@@ -769,19 +769,19 @@ a:hover.tp-button.lightgrey {
 	display: inline-block;
 	text-decoration: none !important;
 	width: 1em;
-	margin-right: .2em;
+	margin-right: .7em;
 	text-align: center;
 	/* opacity: .8; */
 	/* For safety - reset parent styles, that can break glyph codes*/
 	font-variant: normal;
 	text-transform: none;
 	/* fix buttons height, for twitter bootstrap */
-	line-height: 1em;
+	line-height: 2em;
 	/* Animation center compensation - margins should be symmetric */
 	/* remove if not needed */
 	margin-left: .2em;
 	/* you can be more comfortable with increased icons size */
-	/* font-size: 120%; */
+	font-size: 120%;
 	/* Uncomment for 3D effect */
 	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
@@ -15764,7 +15764,7 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
 	padding: 0;
 }
 .header-transparent #Top_bar.is-sticky .menu>li>a span:not(.description) {
-	line-height: 60px;
+	line-height: 95px;
 }
 /* Buttons | Stroke ------------------------------------------------------------------ */
 
@@ -19509,7 +19509,7 @@ a.action_button:hover{text-decoration:none}
 
 /* Wrap | Equal Height */
 .equal-height-wrap .mcb-wrap .mcb-wrap-inner{position:relative;float:left;width:100%}
-.equal-height-wrap .mcb-wrap.valign-middle .mcb-wrap-inner{top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
+.equal-height-wrap .mcb-wrap.valign-middle .mcb-wrap-inner{top:30%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
 .equal-height-wrap .mcb-wrap.valign-bottom .mcb-wrap-inner{top:100%;-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%)}
 
 
